@@ -10,13 +10,82 @@
         <script src="https://cdn.tailwindcss.com"></script>
 
         <script src="scripts/tailwind.js"></script>
+        <script src="scripts/awesome.js"></script>
 
         <link rel="stylesheet" href="style/fonts.css" />
         <link rel="stylesheet" href="style/tailwind.css" />
+        <link rel="stylesheet" href="style/page.css" />
     </head>
     <body>
+        <header class="hero py-64 relative">
+            <div class="container mx-auto px-4 md:px-0 text-center">
+                <h1 class="font-marker text-7xl text-green-500">Rise of the beast</h1>
+                <span class="block pt-2 font-marker text-3xl text-fuchsia-500">27.3.23 in Kolding</span>
+            </div>
+            <div class="overlay absolute w-full h-full inset-0 z-[-1] bg-gray-800">
+                <img src="/assets/images/splash_animation.gif" class="opacity-10 absolute w-full h-full object-cover inset-0 z-10" />
+                <div class="overlay-gradient absolute w-full h-full object-cover inset-0"></div>
+            </div>
+        </header>
+        <section class="container mx-auto px-4 md:px-0 text-center translate-y-[-50%]">
+            <section id="countdown" class="countdown rounded-md grid grid-cols-4 text-center py-8 px-2 bg-gradient-to-r to-red-600 text-white from-indigo-500 font-marker">
+                <div id="countdown-days">
+                    <div class="value">0</div>
+                    <div class="label">days</div>
+                </div>
+                <div id="countdown-hours">
+                    <div class="value">0</div>
+                    <div class="label">hours</div>
+                </div>
+                <div id="countdown-minutes">
+                    <div class="value">0</div>
+                    <div class="label">minutes</div>
+                </div>
+                <div id="countdown-seconds">
+                    <div class="value">0</div>
+                    <div class="label">seconds</div>
+                </div>
+            </section>
+        </section>
+        <main>
+
+            <section class="flex flex-wrap md:flex-nowrap container mx-auto px-4 md:px-0 text-center">
+                <section class="text-left flex-[0_0_100%] md:flex-1">
+                    <h2 class="font-title text-6xl">Become hunter or prey in Bow Tag</h2>
+                    <p class="font-body pt-6 pb-7">
+                        Experience the adrenaline rush of Bow Tag - the hottest new team game that combines the excitement of dodgeball with the precision of archery! Get ready to unleash your inner warrior and battle it out with your colleagues in a safe and thrilling way. With foam-tipped arrows and state-of-the-art equipment, you can enjoy all the fun without any of the risks. So grab your bow, gear up, and get ready to tag your way to victory! Are you ready to take on the challenge?
+                    </p>
+                    <a href="https://realadventure.dk/real-adventure/find-vej" title="Find way" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 144a144 144 0 1 1 288 0A144 144 0 1 1 32 144zM176 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM144 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                        <span>Show on map</span>
+                    </a>
+                </section>
+                <section class="bow-tag-splash w-full pt-8 md:p-8 flex-[0_0_100%] md:flex-1">
+                    <img src="/assets/images/bow_tag.png" alt="Bow tag" class="rounded-md w-full aspect-[4/2] object-cover">
+                </section>
+            </section>
+
+            <section class="flex flex-wrap md:flex-nowrap container mx-auto px-4 md:px-0 text-center mt-8 md:mt-16">
+                <section class="text-left flex-[0_0_100%] md:flex-1">
+                    <h2 class="font-title text-6xl">Building Five</h2>
+                    <p class="font-body pt-6 pb-7">3D printers, board games, pizza. At Building5 we will let our nerdy selves loose and will enjoy late afternoon of creative fun.</p>
+                    <a href="http://bygning5.dk/" title="Find way" class="bg-gray-300 hover:bg-gray-400 text-gray-800 font-bold py-2 px-4 rounded inline-flex items-center">
+                        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.3.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M32 144a144 144 0 1 1 288 0A144 144 0 1 1 32 144zM176 80c8.8 0 16-7.2 16-16s-7.2-16-16-16c-53 0-96 43-96 96c0 8.8 7.2 16 16 16s16-7.2 16-16c0-35.3 28.7-64 64-64zM144 480V317.1c10.4 1.9 21.1 2.9 32 2.9s21.6-1 32-2.9V480c0 17.7-14.3 32-32 32s-32-14.3-32-32z"/></svg>
+                        <span>Show on map</span>
+                    </a>
+                </section>
+                <section class="bow-tag-splash w-full pt-8 md:p-8 flex-[0_0_100%] md:flex-1 order-last md:order-first">
+                    <img src="/assets/images/building-five.jpg" alt="Building five" class="rounded-md w-full aspect-[4/2] object-cover">
+                </section>
+            </section>
+
+        </main>
+
+        <!--
         <h1 class="font-title">Title</h1>
         <h3 class="font-marker">Marker</h3>
         <p class="font-body">Hello world!</p>
+        -->
+        <script src="scripts/countdown.js"></script>
     </body>
 </html>
