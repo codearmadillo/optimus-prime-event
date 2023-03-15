@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Permanent Marker';
+    src: url(../assets/fonts/permanent-marker.ttf);
+}
+@font-face {
+    font-family: 'Transformers';
+    src:url('../assets/fonts/Transformers.ttf.woff') format('woff'),
+    url('../assets/fonts/Transformers.ttf.svg#Transformers') format('svg'),
+    url('../assets/fonts/Transformers.ttf.eot'),
+    url('../assets/fonts/Transformers.ttf.eot?#iefix') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+}
